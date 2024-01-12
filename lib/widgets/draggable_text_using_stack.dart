@@ -36,10 +36,8 @@ class _DraggedTextState extends State<DraggedText> {
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final size = getRedBoxSize(key.currentContext!);
-      setState(() {
-        _textHeight = size.height;
-        _textWidth = size.width;
-      });
+      _textHeight = size.height;
+      _textWidth = size.width;
     });
     super.initState();
   }

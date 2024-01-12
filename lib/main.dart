@@ -2,7 +2,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:test_project/generated/codegen_loader.g.dart';
 import 'package:test_project/languages.dart';
-import 'package:test_project/widgets/audio_wave_extractor.dart';
 import 'package:test_project/widgets/draggable_text_using_canva.dart';
 
 void main() async {
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: AudioWaveExtractor(),
+        body: DraggableTextWithCanva(),
       ),
     );
   }
